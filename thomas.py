@@ -48,3 +48,18 @@ def thomas(A, b):
         x[i] = (d[i] - c[i] * x[i+1]) / b_[i]
 
     return x
+
+# Exemplo de uso
+A = [[4, 1, 0, 0],
+     [1, 4, 1, 0],
+     [0, 1, 4, 1],
+     [0, 0, 1, 4]]
+
+b = [1, 2, 3, 4]
+
+
+# Resolução do sistema tridiagonal usando o algoritmo de Thomas
+x = thomas(A, b)
+
+# Impressão da solução
+print("Solução do sistema:", x)
